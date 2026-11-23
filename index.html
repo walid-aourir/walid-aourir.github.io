@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CallerID for iPhone — Reverse Phone Number Lookup, CallKit Spam Blocker &amp; GPS Number Locator</title>
+  <meta name="description" content="Identify unknown callers instantly, block robocalls and scam numbers with native iOS CallKit protection, view turn-by-turn GPS routes to consent-verified phone numbers, and get real-time alerts when someone searches your number." />
+  <meta name="keywords" content="caller id iphone, reverse phone number lookup, spam call blocker ios, phone number locator gps, who called me, callkit spam filter, find phone number location map, who searched my phone number, robocall blocker app, international phone number tracker consent, caller name id detector" />
+  <meta name="author" content="CallerID" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://walid-aourir.github.io/" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CallerID — Global Caller Intelligence" />
+  <meta property="og:title" content="CallerID for iPhone — Reverse Phone Lookup, Spam Shield &amp; GPS Number Locator" />
+  <meta property="og:description" content="Real-time caller identification, native iOS CallKit spam call blocking, consent-verified GPS number location with turn-by-turn Apple Maps routing, and instant search alerts." />
+  <meta property="og:url" content="https://walid-aourir.github.io/" />
+  <meta property="og:image" content="https://walid-aourir.github.io/assets/images/hero-3d-render.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CallerID for iPhone — Caller Intelligence, Spam Blocker &amp; GPS Locator" />
+  <meta name="twitter:description" content="Instant reverse phone lookup, native iOS CallKit spam blocking, turn-by-turn GPS route locator, and real-time search activity alerts." />
+  <meta name="twitter:image" content="https://walid-aourir.github.io/assets/images/hero-3d-render.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/images/app-icon.png" />
+  <link rel="apple-touch-icon" href="assets/images/app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- JSON-LD Structured Data: SoftwareApplication + FAQPage + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "CallerID — Caller Intelligence, Spam Shield & Locator",
+        "operatingSystem": "iOS 17.0 or later",
+        "applicationCategory": "UtilitiesApplication",
+        "url": "https://walid-aourir.github.io/",
+        "image": "https://walid-aourir.github.io/assets/images/app-icon.png",
+        "screenshot": "https://walid-aourir.github.io/assets/images/hero-3d-render.jpg",
+        "author": {
+          "@type": "Organization",
+          "name": "CallerID",
+          "email": "walid.aourir1993@gmail.com"
+        },
+        "description": "Global reverse phone number lookup, native iOS CallKit spam call blocker, consent-based last-known GPS number locator with turn-by-turn Apple Maps directions, and real-time Who Searched My Number alerts.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Weekly Premium (Locator_weekly)",
+            "price": "3.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Monthly Premium (Locator_monthly)",
+            "price": "5.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Yearly Premium (Locator_yearly)",
+            "price": "69.99",
+            "priceCurrency": "USD"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does CallerID identify unknown phone numbers and spam calls on iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CallerID normalizes phone numbers in international E.164 format across 200+ countries, checks carrier and line-type metadata, and cross-references community spam reports with Apple's native CallKit Call Directory Extension to label or silence high-risk robocalls before your phone rings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the GPS Phone Number Locator and turn-by-turn route map work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CallerID uses a strict consent-first location architecture. When a registered user enables public location discoverability or approves your location request, CallerID displays their last-known GPS coordinates, accuracy radius, and calculates a real-time driving or walking path from your current position with one-tap navigation in Apple Maps."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I see who searched my phone number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. CallerID sends real-time push notifications and in-app activity alerts whenever your registered phone number is looked up via number search or location lookup, with detailed timestamp and searcher identity insights for Premium subscribers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I cancel my subscription or delete my CallerID account and data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All subscriptions (Locator_weekly, Locator_monthly, Locator_yearly) are billed and managed directly through Apple StoreKit 2 in iOS Settings > Apple ID > Subscriptions. You can permanently delete your account and all associated personal data at any time inside the app via Settings > Delete Account."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Sticky Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-lockup" aria-label="CallerID Home">
+        <img src="assets/images/brand-logo.png" alt="CallerID Official App Logo" width="42" height="42" />
+        <span>Caller<span class="accent">ID</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features" class="active">Features</a></li>
+        <li><a href="#video-demos">Video Demos</a></li>
+        <li><a href="#live-simulator">Live Lookup</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="theme-switcher" role="group" aria-label="Color Theme Selector">
+          <button type="button" class="theme-btn" data-theme-set="system">Auto</button>
+          <button type="button" class="theme-btn" data-theme-set="light">Light</button>
+          <button type="button" class="theme-btn active" data-theme-set="dark">Dark</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="padding: 9px 18px; font-size: 0.86rem;">Support</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>iOS 17+ CallKit • StoreKit 2 • E.164 Global Engine</span>
+          </div>
+          <h1 class="hero-title">
+            Global <span class="gradient-text">Caller ID</span>, Native Spam Shield &amp; Turn-by-Turn <span class="gradient-text">Number Locator</span>
+          </h1>
+          <p class="hero-subtitle">
+            Uncover unknown callers across 200+ countries, block robocalls and phishing numbers automatically via Apple’s native Call Directory Extension, navigate to consent-verified phone locations with live route polylines, and get instant alerts when someone searches your number.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#video-demos" class="btn btn-primary">Watch Live Video Demos</a>
+            <a href="#live-simulator" class="btn btn-secondary">Try Interactive Lookup</a>
+            <a href="privacy.html" class="btn btn-secondary">Privacy &amp; Legal Center</a>
+          </div>
+
+          <div class="trust-metrics-strip">
+            <div class="metric-item">
+              <strong>200+</strong>
+              <span>Countries &amp; Regions (E.164)</span>
+            </div>
+            <div class="metric-item">
+              <strong>100%</strong>
+              <span>Consent-Gated GPS Routing</span>
+            </div>
+            <div class="metric-item">
+              <strong>EN / AR</strong>
+              <span>Full English &amp; Arabic RTL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-frame">
+          <video autoplay loop muted playsinline poster="assets/images/hero-3d-render.jpg">
+            <source src="assets/video/callerid-hero-demo.mp4" type="video/mp4" />
+            <img src="assets/images/hero-3d-render.jpg" alt="CallerID iPhone App 3D Showcase with Live Caller Verification and GPS Route Map" />
+          </video>
+          <div class="media-caption-bar">
+            <span>● Live iOS Engine Preview — Caller Verification &amp; CallKit Firewall</span>
+            <span style="font-family: var(--font-mono); color: var(--brand-cyan);">60 FPS HD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dual Video Showcase Section -->
+    <section id="video-demos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge">HD Motion Walkthroughs</div>
+          <h2 class="section-title">See CallerID &amp; Live GPS Routing in Action</h2>
+          <p class="section-desc">
+            Engineered with native SwiftUI, Apple MapKit route polylines, CoreLocation telemetry, and CallKit directory extensions for zero-latency protection.
+          </p>
+        </div>
+
+        <div class="video-showcase-dual">
+          <article class="video-card">
+            <video controls autoplay loop muted playsinline poster="assets/images/hero-app-showcase.png">
+              <source src="assets/video/callerid-hero-demo.mp4" type="video/mp4" />
+            </video>
+            <span class="feature-tag">Real-Time Caller Intelligence &amp; CallKit</span>
+            <h3>Instant Reverse Phone Lookup &amp; Robocall Firewall</h3>
+            <p>
+              Watch how CallerID parses international E.164 numbers, verifies carrier and line-type metadata, calculates community spam risk scores (0–100), and blocks high-risk fraud calls before your iPhone even rings.
+            </p>
+          </article>
+
+          <article class="video-card">
+            <video controls autoplay loop muted playsinline poster="assets/images/feature-live-route-map.png">
+              <source src="assets/video/locator-route-demo.mp4" type="video/mp4" />
+            </video>
+            <span class="feature-tag">Turn-by-Turn MapKit Navigation</span>
+            <h3>Consent-Verified Phone Locator &amp; Live Path Routing</h3>
+            <p>
+              When a registered contact shares their last-known location or accepts your location request, CallerID draws a dual-stroke route path from your GPS position to theirs with Drive/Walk ETA and one-tap Apple Maps launch.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Reverse Lookup & Route Simulator -->
+    <section id="live-simulator" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge">Interactive Browser Preview</div>
+          <h2 class="section-title">Test the CallerID &amp; Route Intelligence Engine</h2>
+          <p class="section-desc">
+            Select a sample international phone number below or enter any E.164 number to preview how the iOS app formats caller identity, spam reputation, and turn-by-turn routing telemetry.
+          </p>
+        </div>
+
+        <div class="simulator-box">
+          <div class="sim-presets" aria-label="Sample Phone Numbers">
+            <button type="button" class="preset-chip" data-sim-preset="+1 (415) 890-4321">🇺🇸 +1 (415) 890-4321 (Verified Business)</button>
+            <button type="button" class="preset-chip" data-sim-preset="+44 20 7946 0192">🇬🇧 +44 20 7946 0192 (High-Risk Robocall)</button>
+            <button type="button" class="preset-chip" data-sim-preset="+212 661-234567">🇲🇦 +212 661-234567 (Consent GPS Route)</button>
+          </div>
+
+          <div class="sim-controls">
+            <input
+              type="text"
+              id="sim-phone-input"
+              class="sim-input"
+              value="+1 (415) 890-4321"
+              aria-label="Phone Number Input"
+              placeholder="Enter international phone number (e.g. +1 415 890 4321)"
+            />
+            <button type="button" id="sim-run-btn" class="btn btn-primary">Analyze Number &amp; Route</button>
+          </div>
+
+          <div class="sim-result-grid">
+            <div class="sim-stat-card">
+              <div class="label">Caller Identity &amp; Line Type</div>
+              <div class="value" id="sim-out-name">Apex Global Logistics • Verified Business (US)</div>
+            </div>
+            <div class="sim-stat-card">
+              <div class="label">Spam Reputation &amp; CallKit Status</div>
+              <div class="value" id="sim-out-reputation" style="color: #10B981;">0/100 Safe • Verified Carrier (AT&amp;T Mobility)</div>
+            </div>
+            <div class="sim-stat-card">
+              <div class="label">Consent-Gated GPS Route Telemetry</div>
+              <div class="value" id="sim-out-route">4.8 km • 9 min Drive (Consent-Verified GPS Fix)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6-Card Core Feature Grid with Custom 3D Artwork -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge">Complete Feature Architecture</div>
+          <h2 class="section-title">Everything You Need for Phone Security &amp; Location Clarity</h2>
+          <p class="section-desc">
+            Built from the ground up for iOS with privacy-by-design safeguards, deterministic StoreKit 2 entitlement tracking, and full Arabic RTL and English localization.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div>
+              <img src="assets/images/card-caller-id.png" alt="Reverse Phone Number Lookup and Global Caller ID" class="feature-thumb" loading="lazy" />
+              <span class="feature-tag">Global E.164 Intelligence</span>
+              <h3>Reverse Phone &amp; Name Lookup</h3>
+              <p>
+                Search any local or international phone number—or look up discoverable profiles by name—to view verified caller names, country flags, carrier details, device models, and line classifications.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div>
+              <img src="assets/images/feature-spam-firewall.jpg" alt="iOS CallKit Spam Call Blocker and Fraud Shield" class="feature-thumb" loading="lazy" />
+              <span class="feature-tag">Native iOS CallKit Extension</span>
+              <h3>Automated Spam &amp; Robocall Shield</h3>
+              <p>
+                Sync your personal block list and community-reported telemarketers, scammers, and debt collectors directly to iOS Call Directory settings so unwanted callers are blocked at the system level.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div>
+              <img src="assets/images/feature-live-route-map.jpg" alt="Consent-Based GPS Phone Number Locator and Turn-by-Turn Route Map" class="feature-thumb" loading="lazy" />
+              <span class="feature-tag">MapKit Route Polylines</span>
+              <h3>Last-Known GPS Locator &amp; Navigation</h3>
+              <p>
+                Locate consenting registered numbers or send permissioned location requests. Tap any located address to open an interactive full-screen navigation map with Driving/Walking paths and Apple Maps handoff.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div>
+              <img src="assets/images/card-instant-alerts.png" alt="Who Searched My Phone Number Real-Time Push Alerts" class="feature-thumb" loading="lazy" />
+              <span class="feature-tag">Real-Time Search Alerts</span>
+              <h3>Who Searched My Phone Number</h3>
+              <p>
+                Receive instant push notifications and in-app activity badges whenever someone searches your phone number or requests your location, with full search history and privacy controls.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div>
+              <img src="assets/images/card-caller-prism.png" alt="Who Blocked My Number Community Insights and Privacy Controls" class="feature-thumb" loading="lazy" />
+              <span class="feature-tag">Transparent Privacy Controls</span>
+              <h3>Who Blocked Me &amp; Identity Privacy</h3>
+              <p>
+                Review community-reported block signals with honest iOS technical disclosures, toggle your searcher identity visibility at any time, and revoke public location discoverability with one tap.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div>
+              <img src="assets/images/card-premium-crown.png" alt="CallerID Pro Ad-Free StoreKit 2 Experience and Arabic RTL Support" class="feature-thumb" loading="lazy" />
+              <span class="feature-tag">Bilingual &amp; Adaptive Theme</span>
+              <h3>Native Arabic RTL &amp; Dark/Light Themes</h3>
+              <p>
+                Seamlessly switch between System, Light, and Dark themes and English or Arabic RTL interfaces—complete with Eastern Arabic numeral normalization (`٠-٩`) and BiDi-safe phone formatting.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Technical Comparison Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge">Why Choose CallerID</div>
+          <h2 class="section-title">Engineered for Privacy, Accuracy &amp; Apple Compliance</h2>
+          <p class="section-desc">
+            Unlike legacy caller directories that harvest your private address book or make false covert-tracking claims, CallerID is built on transparent consent and native Apple frameworks.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Capability / Privacy Safeguard</th>
+                <th>CallerID for iPhone</th>
+                <th>Typical Legacy Caller Apps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Turn-by-Turn Route Path to Located Number</strong></td>
+                <td style="color: var(--brand-emerald); font-weight: 700;">✓ Full MapKit Polyline + Drive/Walk ETA + Apple Maps Handoff</td>
+                <td>Static pin only or no route directions</td>
+              </tr>
+              <tr>
+                <td><strong>Location Privacy &amp; Consent Model</strong></td>
+                <td style="color: var(--brand-emerald); font-weight: 700;">✓ 100% Opt-In Public Disclosure or Mutual Request Approval</td>
+                <td>Opaque background tracking or misleading claims</td>
+              </tr>
+              <tr>
+                <td><strong>Private Contacts / Address Book Upload</strong></td>
+                <td style="color: var(--brand-emerald); font-weight: 700;">✓ Never Uploads Your Contacts without Permission</td>
+                <td>Often requires full contact book upload</td>
+              </tr>
+              <tr>
+                <td><strong>Who Searched My Number Alerts</strong></td>
+                <td style="color: var(--brand-emerald); font-weight: 700;">✓ Real-Time FCM Push Alerts + Searcher Identity Breakdown</td>
+                <td>Delayed or unavailable</td>
+              </tr>
+              <tr>
+                <td><strong>Arabic RTL &amp; Arabic-Indic Keypad Digits</strong></td>
+                <td style="color: var(--brand-emerald); font-weight: 700;">✓ Native BiDi-Safe LTR Numbers + Eastern Arabic Digit Parsing</td>
+                <td>Broken number alignment in RTL languages</td>
+              </tr>
+              <tr>
+                <td><strong>One-Tap Permanent Account &amp; Data Deletion</strong></td>
+                <td style="color: var(--brand-emerald); font-weight: 700;">✓ Instant In-App Purge (Settings &gt; Delete Account)</td>
+                <td>Manual email ticket required</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparent App Store Connect Subscription Pricing -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge">StoreKit 2 Auto-Renewable Plans</div>
+          <h2 class="section-title">Simple, Transparent App Store Subscriptions</h2>
+          <p class="section-desc">
+            Use CallerID free with ad-supported lookups, or upgrade to CallerID Pro for an 100% ad-free experience, full Who Searched My Number searcher identities, extended carrier intelligence, and priority CallKit spam protection.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div>
+              <div class="price-tier-name">Weekly Premium</div>
+              <div class="price-sku">Product ID: Locator_weekly</div>
+              <div class="price-amount">$3.99</div>
+              <div class="price-period">per week • billed via Apple ID</div>
+              <ul class="price-features">
+                <li>100% Ad-Free Phone &amp; Name Lookups</li>
+                <li>Full Searcher Identity in Who Searched Me</li>
+                <li>Turn-by-Turn GPS Route Map &amp; Apple Maps Navigation</li>
+                <li>Extended Carrier, Line Type &amp; Reputation Breakdown</li>
+                <li>Cancel anytime in iOS Settings &gt; Subscriptions</li>
+              </ul>
+            </div>
+            <a href="terms.html#subscriptions" class="btn btn-secondary">View Subscription Terms</a>
+          </div>
+
+          <div class="price-card popular">
+            <span class="popular-ribbon">Most Popular</span>
+            <div>
+              <div class="price-tier-name">Monthly Premium</div>
+              <div class="price-sku">Product ID: Locator_monthly</div>
+              <div class="price-amount">$5.99</div>
+              <div class="price-period">per month • save over 60% vs. weekly</div>
+              <ul class="price-features">
+                <li>Everything in Weekly Premium</li>
+                <li>Unlimited Ad-Free Reverse Lookups &amp; Name Searches</li>
+                <li>Real-Time Who Searched Me &amp; Who Blocked Me Insights</li>
+                <li>Live StoreKit 2 Entitlement Sync Across Your iOS Devices</li>
+                <li>Priority Customer &amp; Privacy Support</li>
+              </ul>
+            </div>
+            <a href="terms.html#subscriptions" class="btn btn-primary">View Subscription Terms</a>
+          </div>
+
+          <div class="price-card">
+            <div>
+              <div class="price-tier-name">Yearly Premium</div>
+              <div class="price-sku">Product ID: Locator_yearly</div>
+              <div class="price-amount">$69.99</div>
+              <div class="price-period">per year • best annual protection</div>
+              <ul class="price-features">
+                <li>Everything in Monthly Premium</li>
+                <li>365 Days of Continuous CallKit Spam Shield &amp; Alerts</li>
+                <li>Full Turn-by-Turn GPS Route &amp; Location Request Suite</li>
+                <li>Zero Interstitial, Rewarded, or App Open Ads</li>
+                <li>Managed directly via Apple App Store Billing</li>
+              </ul>
+            </div>
+            <a href="terms.html#subscriptions" class="btn btn-secondary">View Subscription Terms</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO FAQ Section -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge">Frequently Asked Questions</div>
+          <h2 class="section-title">Answers About CallerID, GPS Privacy &amp; Subscriptions</h2>
+          <p class="section-desc">
+            Everything you need to know about how CallerID protects both your incoming calls and your legal privacy rights.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>How does CallerID locate a phone number and show a path to it? <span>＋</span></summary>
+            <p>
+              CallerID operates strictly on user consent. A phone number’s location is only displayed when that registered user has explicitly enabled <strong>Public Last-Known Location Discoverability</strong> (after confirming a public disclosure prompt) or has explicitly accepted your location request inside the app. Once authorized, CallerID calculates a live driving or walking route path from your location to theirs using Apple MapKit and lets you launch turn-by-turn voice navigation in Apple Maps.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does CallerID upload my private iPhone Contacts or record phone calls? <span>＋</span></summary>
+            <p>
+              <strong>No.</strong> CallerID never uploads or harvests your private iOS Contacts/Address Book and never intercepts or records phone call audio. Call blocking and caller identification use Apple’s sandboxed <code>CXCallDirectoryProvider</code> (Call Directory Extension).
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How does subscription tracking and cancellation work? <span>＋</span></summary>
+            <p>
+              CallerID uses Apple’s official StoreKit 2 framework to verify active subscription entitlements (<code>Locator_weekly</code>, <code>Locator_monthly</code>, <code>Locator_yearly</code>) in real time and automatically removes premium status when a subscription expires or is refunded. You can manage or cancel auto-renewal at any time in <strong>iPhone Settings &gt; [Your Name] &gt; Subscriptions</strong> at least 24 hours before the current period ends.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How can I dispute a community spam report or delete my data? <span>＋</span></summary>
+            <p>
+              If you have an account, you can permanently delete your account and all personal data immediately inside the app via <strong>Settings &gt; Delete Account</strong>. If you are a phone number owner and wish to dispute a crowdsourced spam score, correct a caller label, or opt your number out of directory lookups, submit a request on our <a href="contact.html" style="color: var(--brand-cyan); text-decoration: underline;">Contact &amp; Dispute Center</a> or email <a href="mailto:walid.aourir1993@gmail.com" style="color: var(--brand-cyan); text-decoration: underline;">walid.aourir1993@gmail.com</a>.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-lockup" style="margin-bottom: 14px;">
+            <img src="assets/images/brand-logo.png" alt="CallerID Logo" width="38" height="38" />
+            <span>Caller<span class="accent">ID</span></span>
+          </a>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); max-width: 340px;">
+            Global Caller Intelligence, Native iOS CallKit Spam Shield &amp; Consent-Based GPS Route Locator for iPhone.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Core Features</a></li>
+            <li><a href="#video-demos">HD Video Demos</a></li>
+            <li><a href="#live-simulator">Interactive Simulator</a></li>
+            <li><a href="#pricing">Subscription Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal &amp; Compliance</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy (GDPR / CCPA)</a></li>
+            <li><a href="terms.html">Terms of Use &amp; EULA</a></li>
+            <li><a href="terms.html#subscriptions">Subscription Billing Terms</a></li>
+            <li><a href="privacy.html#account-deletion">Data &amp; Account Deletion</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support &amp; Disputes</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us &amp; Support Center</a></li>
+            <li><a href="contact.html#dispute-form">Dispute / Unlist a Phone Number</a></li>
+            <li><a href="mailto:walid.aourir1993@gmail.com">walid.aourir1993@gmail.com</a></li>
+            <li><a href="app-ads.txt">Authorized Digital Sellers (app-ads.txt)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 CallerID. All rights reserved. Bundle ID: <code>com.calleddetector.callerid</code></span>
+        <span>Apple, iPhone, iOS, CallKit, MapKit, and App Store are trademarks of Apple Inc.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
